@@ -59,8 +59,10 @@
                         </p>
                         <div class="card-body col">
                             <a href="#" class="btn btn-info ">Créé le : {$value['date_fr']}</a>
+							{if ($is_connect == TRUE)}
                             <a href="article.php?action=modifier&id_article={$value['id'] }" class="btn btn-info ">Modifier l'article</a>
                             <a href="delete.php?action=supprimer&id_article={$value['id'] }" class="btn btn-info ">Supprimer l'article</a>
+							{/if}
                             <a href="index.php?page={$page_courante}&action=commentaire&id={$value['id']}" class="btn btn-info" name="Commentaire">Commentaire</a>
                             </br> </br>
                             {if ($get['action']=="commentaire")} <!-- affiche les commentaires de l'article -->
@@ -107,8 +109,10 @@
                         </p>
                         <div class="card-body col">
                             <a href="#" class="btn btn-info ">Créé le : {$value['date_fr'] }</a>
+							{if ($is_connect == TRUE)}
                             <a href="article.php?action=modifier&id_article={$value['id'] }" class="btn btn-info ">Modifier l'article</a>
                             <a href="delete.php?action=supprimer&id_article={$value['id'] }" class="btn btn-info ">Supprimer l'article</a>
+							{/if}
                             <a href="index.php?page={$page_courante}&action=commentaire&id={$value['id']}" class="btn btn-info" name="Commentaire">Commentaire</a>
                             </br>
                             </br>
